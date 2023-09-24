@@ -23,7 +23,7 @@ jobs:
       run: mvn clean install
     
     - name: deploy to tomcat
-      run: curl -v -u tomcat:tomcat /home/runner/work/github-actions-example/github-actions-example/target/springboot-images-new.jar 'http://3.110.190.128:8080/manager/html/deploy?path=/springboot-images-new'
+      run: curl -v -u tomcat:tomcat /home/runner/work/github-actions-example/github-actions-example/target/springboot-images-new.jar 'http://3.110.190.128:8080/manager/txt/deploy?path=/springboot-images-new'
     # copy the building jar PATH and tomcat url copy and paste it here 
     
     - name: Build & push Docker image
