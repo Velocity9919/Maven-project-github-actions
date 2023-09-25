@@ -49,7 +49,7 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: nareshbabu1991/springboot-images-new  # create new repo on dockerhub with the jar name
+        image: nareshbabu1991/springboot-images-new # create new repo on dockerhub with the jar name
         tags: latest
         registry: docker.io
         dockerfile: Dockerfile
